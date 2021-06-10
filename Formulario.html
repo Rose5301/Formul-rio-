@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+  <link rel="stylesheet" type="text/css" href="CSS/estilo.css">
+    <title>EXAME COVID-19</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+      <h2 data-text="COMO ELA SE ESPALHA">COMO ELA SE ESPALHA</h2><br>
+      <h3>
+          <center>
+              O vírus que causa a COVID-19 é transmitido principalmente por meio de gotículas geradas quando uma pessoa infectada tosse, espirra ou exala.<br>
+              Essas gotículas são muito pesadas para permanecerem no ar e são rapidamente depositadas em pisos ou superfícies.<br>
+              Você pode ser infectado ao inalar o vírus se estiver próximo de alguém que tenha COVID-19 ou ao tocar em uma superfície contaminada e,<br>
+              em seguida, passar as mãos nos olhos, no nariz ou na boca.
+          </center>
+      </h3>
+  </body>
+ <form action="#" method="post"><br>
+    <fieldset>
+        <h4>PARA DESCOBRIR SE ESTÁ COM COVID-19, REGISTRE SEUS DADOS E DESCREVA SEUS SINTOMAS.</h4>
+            <div class="dados">
+                <label for="nome">Nome:</label>
+                <input type="nome" id="nome" name="nome" style="width: 30em" value="">
+           
+                <label for="snome">Sobrenome:</label>
+                <input type="lastnome" id="snome" name="snome" style="width: 30em" value=""><hr size="2" width="100%" noshade > 
+      
+                <label for="nascimento">Data de nascimento</label> 
+			    <input type="date" name="nascimento">
+     
+            <label><p>Sexo:</p></label>
+            <label></p>
+                <input type="radio" name="sexo" value="masculino"> Masculino
+            </p></label>
+            <label><p>
+                <input type="radio" name="sexo" value="feminino"> Feminino
+            </p></label>
+        </div>
+    
+        <div class="contato">
+            <p><label for="email">E-mail:</label>
+            <input type="text" id="email" name="email" style="width: 30em" value=""></p>
+           
+            <p><label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" name="telefone" style="width: 30em" value=""></p>
+
+            <p><label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" style="width: 30em" value=""></p><hr size="2" width="100%" noshade >
+          
+                <label for="estado">Estado</label>
+                <select name="estado" id="estado">
+                    <option value="">--</option>
+                    <option value="">AC</option>
+					<option value="">AL</option>
+					<option value="">AP</option>
+					<option value="">AM</option>
+					<option value="">BA</option>
+					<option value="">CE</option>
+					<option value="">DF</option>
+					<option value="">ES</option>
+					<option value="">GO</option>
+					<option value="">MA</option>
+					<option value="">MT</option>
+					<option value="">MS</option>
+					<option value="">PA</option>
+					<option value="">PB</option>
+					<option value="">PE</option>
+					<option value="">PI</option>
+					<option value="">RJ</option>
+					<option value="">RN</option>
+					<option value="">RS</option>
+					<option value="">RO</option>
+					<option value="">RR</option>
+					<option value="">SC</option>
+					<option value="">SP</option>
+					<option value="">SE</option>
+                    <option value="">SP</option>
+					<option value="">TO</option>
+                </select>
+		</div>
+		<label>Sintomas:</label>
+		<div class="checkbox">
+	<input type="checkbox" id="febre">
+<label>Febre</label>
+<br>
+<input type="checkbox" id="tosse">
+<label>Tosse Seca</label>
+<br>
+<input type="checkbox" id="cansaco">
+<label>Cansaço</label>
+</div>
+        <button onclick="funcao1()" name="botao" class="botaoEnviar">Enviar</button>
+        <p id="demo"></p>
+
+<script>
+function funcao1()
+{
+var x;
+var r=confirm("Você concluiu o envio!");
+if (r==true)
+document.getElementById("demo").innerHTML=x;
+}
+</script>
+    </fieldset>
+</form>
+</html>
